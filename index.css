@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+    color: #007bff    
+}
+
+#home {
+    background-color: #f4f4f4;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3rem;
+    color: #007bff;
+}
+
+#home p {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+/* Introduction Section Styling */
+.introduction-section {
+    background-color: #f4f4f4;
+    padding: 3rem 0;
+    text-align: center;
+    border: 1px solid #007bff;
+    margin: 2rem auto;
+    max-width: 70%;
+}
+
+
+.home-section {
+    background-color: #f4f4f4;
+    padding: 3rem 0;
+    text-align: center;
+    border: 1px solid #007bff;
+    margin: 2rem auto;
+    max-width: 70%;
+}
+/* Featured Section Styling */
+.featured-section {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.resource-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.resource {
+    width: 40%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    text-align: left;
+}
+
+.resource img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.resource h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.resource button {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    background-color: green;
+color: white
+}
+
+/* Categories Section Styling */
+.categories-section {
+    padding: 3rem 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.categories-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.category {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 30%;
+    text-align: left;
+}
+
+.category button {
+    display: block;
+    background-color: green;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+.category button:hover {
+    background-color: darkgreen;
+}
+
+/* Contact Form and Map Styling */
+#contact-and-map {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the two sections */
+    padding: 20px;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Google map container */
+.google-map {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.google-map iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .resource-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .categories-container {
+        flex-direction: column;
+    }
+
+    #contact-and-map {
+        flex-direction: column;
+    }
+}
+/* Other existing styles... */
+
+/* Join Our Community Section */
+#join-community {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 2px solid #ddd;
+    margin-top: 20px;
+}
+
+#join-community h2 {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+#join-community p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #007bff;
+    padding: 10px 0;
+}
+/* Form Submission Confirmation */
+#formResponse {
+    margin-top: 15px;
+    color: green;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
